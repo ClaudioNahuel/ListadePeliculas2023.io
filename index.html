@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Peliculas 2023</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    
+    <div data-vista="inicio" class="container-lg p-0">
+
+        <header class="container-lg  px-2 py-3 text-center headerPeliculas">
+
+          
+          <h1 class="fs-10 mb-0 tituloPeliculas">Lista de Peliculas</h1>
+          <div class="align-items-center">
+          <img src="img/logo.svg" alt="logo" width="100" height="80" >
+          
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-file-x-fill" viewBox="0 0 16 16" id="btn-vaciar">
+                <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146 8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-badge-fill" viewBox="0 0 16 16" id="info">
+              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6m5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1z"/>
+            </svg>
+          </div>
+
+        </header>
+        
+        <div class="search">
+            <form>
+                    <input type="text" placeholder="Agregar pelicula..." id="peliculas">
+
+                    <button class="btn-add">
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-star-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5M8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098z"/>
+                      </svg>
+
+                    </button>
+                    
+            </form>
+        </div>
+        <div class="li-container">
+            <ul id="lista-peliculas">
+            </ul>
+        </div>
+        <div id="vacio">
+            <p class="noHayPeliculas">No hay peliculas en la lista.</p>
+        </div>
+    </div>
+
+    <div data-vista="datos" class="container-lg p-0 bg-dark-subtle">
+
+        <header class="container-lg bg-dark text-white px-2 py-3 text-center">
+
+            <h1 class="fs-5 mb-0">Colaboradores</h1>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="cerrar" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+              </svg>
+
+        </header>
+
+        <section class="container-lg py-5 bodyperfiles">
+
+            <section id="dos">
+                <div class="container text-center">                 
+            
+                  <section class="container-fluid">
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-6 mt-6">
+                        <div class="card shadow">
+                          <img src="img/Constanza.jpeg" class="img-fluid" alt="Constanza Alonso">
+                          <div class="card-body">
+                            <h5 class="card-title">Constanza Alonso</h5>
+                                        
+                          </div>
+                        </div>
+                      </div>
+            
+                      <div class="col-12 col-md-6 col-lg-6 mt-6">
+                        <div class="card shadow">
+                          <img src="img/Claudio.jpeg" class="img-fluid" alt="Claudio Nahuel Sanchez">
+                          <div class="card-body">
+                            <h5 class="card-title">Claudio Nahuel Sanchez</h5>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+            
+            <ul class="list-group">
+
+                <li class="card shadow"><span class="fw-bold">Comisión:</span> CMM3BV</li>
+                <li class="card shadow"><span class="fw-bold">Materia:</span> Diseño y Programación Web I</li>
+                <li class="card shadow"><span class="fw-bold">Docente:</span> Omar Toyos</li>
+                <li class="card shadow"><span class="fw-bold">Año:</span> 2023</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

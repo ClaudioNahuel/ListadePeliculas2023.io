@@ -1,0 +1,164 @@
+[data-vista] {
+  position: relative;
+  min-height: 100vh;
+  display: none;
+}
+
+[data-vista="inicio"] {
+    display: block;
+
+}
+
+.cerrar {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: lightseagreen;
+  color: white;
+  background-image: url(../img/1155.jpg);
+  background-size: cover;
+}
+
+.headerPeliculas {
+ margin-bottom: 8%;
+ color: white;
+ background-color: #e31746;
+}
+
+.tituloPeliculas {
+  font-size: 1.5rem;
+
+}
+
+h1 {
+  text-align: center;
+  color: darkslategrey;  
+  display: inline-block;
+}
+
+.search {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+input {
+  padding: 15px 10px;
+  outline: none;
+  width: 400px;
+}
+
+.li-container {
+  width: 100%;
+  color: darkslategray;
+  margin-top: 20px;
+
+}
+
+li {
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  box-shadow: 14px 13px 18px 0px rgba(0,0,0,0.64);
+}
+
+li p {
+  background-color: lightgray;
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.btn-delete {
+  margin-left: auto;
+  border: none;
+  background-color: #e31746;
+  color: white;
+  padding: 5px 10px;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 10%;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  background-color: lightseagreen;
+}
+
+.btn-add {
+  padding: 5px 15px;
+  border: none;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  outline: black;
+  border-radius: 30%;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  outline-color: invert;
+  transition-duration: 900ms;
+
+}
+
+
+#vacio {
+  display: none;
+  color: darkslategrey;
+  text-align: center;
+}
+
+
+#info {
+  position: absolute;
+  right: 1rem;
+  top: 3rem;
+  display: inline-block;
+
+}
+
+#btn-vaciar {
+  position: absolute;
+  left: 1rem;
+  top: 3rem;
+  display: inline-block;
+}
+
+.noHayPeliculas {
+  color: black; 
+  background-color: lightgray; 
+  padding: 10px; 
+  border-radius: 10px; 
+  display: inline-block; 
+}
+
+
+@media (max-width: 767px) {
+  .noHayPeliculas {
+      width: 100%; 
+      text-align: center; 
+  }
+}
+
+.bodyperfiles {
+  background-color: blueviolet;
+}
+
+
